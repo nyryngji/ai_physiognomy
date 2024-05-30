@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'chosun';
+    src: url('../font/ChosunCentennial_ttf.ttf');
+}
+
+* {
+    font-family: 'chosun';
+}
+
+.main_container {
+    max-width: 370px;
+    height: 740px;
+    background-image: url('../img/back.png');
+    margin: 0 auto;
+    padding: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner p{
+    text-align: center;
+    margin-bottom: 20px;
+  }
