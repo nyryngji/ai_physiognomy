@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'choose_gender_page.css' %}">
+</head>
+<body>
+    <div class="main_container">
+        <div class="banner">
+            <p style="font-size: 35px;">당신의 성별을<br>선택해주시오.</p>
+        </div>
+
+        <a href="{% url 'upload_page4' %}" style="text-decoration: none;">
+            <div class="category">
+                <div class="line1">
+                    <div class="line2">
+                        <img src="{% static 'img/성별1.png' %}" height="90px" style="width: 253px; margin-right: 15px;">
+                        <p style="font-size: 38px; margin-right: 10px;">여성</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="{% url 'upload_page3' %}" style="text-decoration: none;">
+            <div class="category">
+                <div class="line1">
+                    <div class="line2">
+                        <img src="{% static 'img/성별4.png' %}" height="90px" style="margin-right: 11.5px;">
+                        <p style="font-size: 38px; margin-right: 30px; margin-left: 20px;">남성</p>
+                        <img src="{% static 'img/성별2.png' %}" height="90px">
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <img src="{% static 'img/성별3.png' %}" style="width: 390px; height: 215px;">
+    </div>
+</body>
+</html>

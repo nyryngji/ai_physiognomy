@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'choose_page.css' %}">
+</head>
+<body>
+    <div class="main_container">
+        <div class="banner">
+            <p style="font-size: 35px;">당신이 원하는 관상을<br>선택하시오.</p>
+        </div>
+
+        <a href="{% url 'upload_page1' %}" style="text-decoration: none;">
+            <div class="category">
+                <div class="line1">
+                    <div class="line2">
+                        <p style="font-size: 38px; margin-left: 10px;">강아지상</p>
+                        <img src="{% static 'img/그림1.png' %}" height="90px" style="margin-left: 11px;">
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="{% url 'upload_page2' %}" style="text-decoration: none;">
+            <div class="category">
+                <div class="line1">
+                    <div class="line2">
+                        <p style="font-size: 38px; margin-right: 42px;">고양이상</p>
+                        <img src="{% static 'img/그림2.png' %}" height="90px" style="margin-left: 16px;">
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="{% url 'choose_gender_page' %}" style="text-decoration: none;">
+            <div class="category">
+                <div class="line1">
+                    <div class="line2">
+                        <p style="font-size: 38px; margin-right: 56px;">연예인상</p>
+                        <img src="{% static 'img/그림3.png' %}" height="90px" style="margin-left: 16px;">
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

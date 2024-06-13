@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'chosun';
+    src: url('../static/font/ChosunCentennial_ttf.ttf');
+}
+
+* {
+    font-family: 'chosun';
+}
+
+.main_container {
+    width: 370px;
+    height: 740px;
+    background-image: url('../static/img/back.png');
+    margin: 0 auto;
+    padding: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms .submits {
+  background-image: url('../static/img/send_button.png');
+  width: 140px;
+  height: 75px;
+  border: none;
+  background-size:contain;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+
+form .show_image {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-left: 5px;
+  background-color: white;
+}
+
+.show_image .show {
+  display: none;
+}
+
+.show_image #image_preview {
+  display: none;
+  width: 360px;
+  height: 360px;
+}
+
+

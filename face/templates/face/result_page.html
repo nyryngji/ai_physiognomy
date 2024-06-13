@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'result.css' %}">
+</head>
+<body>
+    <div class="main_container">
+        <div class="banner">
+            <p style="font-size: 35px;">당신과 닮은 관상은</p>
+            {% if pred1 %}
+                <p style="font-size: 20px; color: red;" class="result">{{ pred1 }}</p>
+            {% elif pred2 %}
+                <p style="font-size: 20px; color: red;" class="result">{{ pred2 }}</p>
+            {% elif pred3 %}
+                <p style="font-size: 20px; color: red;" class="result">{{ pred3 }}</p>
+            {% elif pred4 %}
+                <p style="font-size: 20px; color: red;" class="result">{{ pred4 }}</p>
+            {% else %}
+                <p>예측된 값이 없습니다.</p>
+            {% endif %}
+
+            <img src="{% static r_image %}" style="width: 360px; height: 300px; margin-left: 5px;">
+            
+            {% if face %}
+                <p style="word-break: keep-all;">얼굴 : {{ face }}</p>
+            {% else %}
+                <p></p>
+            {% endif %}
+            
+            {% if pers %}
+                <p style="margin-bottom: 16px; word-break: keep-all;">성격 : {{ pers }}</p>
+            {% else %}
+            <p></p>
+            {% endif %}
+            <p style="margin-bottom: 5px; word-break: keep-all;">{{ info1 }}</p>
+            <p style="margin-top: 2px; word-break: keep-all;">{{ info2 }}</p>
+        </div>
+
+        <a href="{% url 'main_page' %}"><img src="{% static 'img/나비.png' %}" style="width: 100px; height: 80px;"></a>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'file_upload_page.css' %}">
+    {% csrf_token %}
+</head>
+<body>
+    <div class="main_container">
+        <div class="banner">
+            <p style="font-size: 35px;">당신의 초상화를<br>보내주시오.</p>
+            <form method="post" enctype="multipart/form-data" class="forms" id="forms">
+                <input type="hidden" name="csrfmiddlewaretoken" value="5FsXuBtZXu2SmX56y3ymOdEh7KjIXcRZJgoE0epIjPgnS9eU2gO6T5IZdtYyhQk4">
+                <div class="show_image">
+                    {% csrf_token %}
+                    <label class="file-label" for="id_image" style="font-size: 20px;">???</label>
+                    <input type="file" name="image" accept="image/*" required="" id="id_image" class="show">
+                    <img id="image_preview" src="#" alt="Image Preview">
+                </div>
+                    <input type="submit" class="submits" value="">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('id_image').addEventListener('change', function(event) {
+            var input = event.target;
+            var label = document.querySelector('.file-label');
+            var imgPreview = document.getElementById('image_preview');
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    imgPreview.src = e.target.result;
+                    imgPreview.style.display = 'block';
+                    label.style.display = 'none';
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        });
+
+    </script>
+
+</body>
+</html>
