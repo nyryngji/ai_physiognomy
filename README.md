@@ -9,6 +9,10 @@
 |배수한|연예인상 ai 모델 학습, 프론트엔드 보조|
 <br>
 
+> **Tech**
+- Django 5.0.6
+<br>
+
 > **Model**
 - https://drive.google.com/drive/folders/1aZBNbeJ4JYrcnUmsUKxGvWM9ApUHMnvg
 <br>
