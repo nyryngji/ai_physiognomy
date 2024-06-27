@@ -18,4 +18,4 @@
 <br>
 
 > **Service Design**
-<img src="https://github.com/nyryngji/ai_physiognomy/assets/105197496/8c07012c-01ba-402c-919e-82d34ad12c32" alt="Image Description" width="700" height="300"/>
+<img src="https://github.com/nyryngji/ai_physiognomy/assets/105197496/4c6592b3-328a-4897-9fe7-16254dde210a" alt="Image Description"/>
