@@ -11,11 +11,17 @@
 
 > **Tech**
 - Django 5.0.6
+- Tensorflow
+ 
 <br>
 
 > **Model**
 - https://drive.google.com/drive/folders/1aZBNbeJ4JYrcnUmsUKxGvWM9ApUHMnvg
 <br>
+
+> **접속 방법**
+- python manage.py runserver
+- http://127.0.0.1:8000/face
 
 > **Service Design**
 <img src="https://github.com/nyryngji/ai_physiognomy/assets/105197496/4c6592b3-328a-4897-9fe7-16254dde210a" alt="Image Description"/>
