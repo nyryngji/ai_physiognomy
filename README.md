@@ -1,27 +1,37 @@
-### 관상학 : ai를 활용한 닮은꼴 찾기 서비스
+## 관상학 : 자신과 닮은꼴 매칭 서비스
 
-> **Team**
-
-|팀원|역할|
-|:---:|:---:|
-|권민정|웹서버, 강아지상 ai 모델 학습, 프론트엔드|
-|김수한|고양이상 ai 모델 학습, 프론트엔드 보조, 배포 시도|
-|배수한|연예인상 ai 모델 학습, 프론트엔드 보조|
+> 개발 기간 
+- 2024.05.10 ~ 2024.06.14
 <br>
 
-> **Tech**
-- Django 5.0.6
-- Tensorflow
- 
+> Stack
+- **AI** : Python, Tensorflow, Pytorch
+- **FrontEnd** :  HTML, CSS, JavaScript
+- **BackEnd** : Django
+
 <br>
 
-> **Model**
-- https://drive.google.com/drive/folders/1aZBNbeJ4JYrcnUmsUKxGvWM9ApUHMnvg
+> 담당 업무
+- Python을 활용하여 강아지 이미지 웹 크롤링
+- Tensorflow을 활용한 Inception V3 모델 전이 학습
+- HTML, CSS, JavaScript를 활용한 웹페이지 구현
+- Django를 활용하여 로컬 웹서버 구현
 <br>
 
-> **접속 방법**
-- python manage.py runserver
-- http://127.0.0.1:8000/face
 
-> **Service Design**
-<img src="https://github.com/nyryngji/ai_physiognomy/assets/105197496/4c6592b3-328a-4897-9fe7-16254dde210a" alt="Image Description"/>
+> 실제 구현 이미지
+
+<details>
+    <summary>실제 구현 이미지</summary>
+
+<img src="https://github.com/user-attachments/assets/e96b089e-01e9-4434-a7b8-476283b7c11a"  width="700" height="400"/> 
+
+</details>
+
+<br>
+
+> 시연 영상
+
+https://github.com/user-attachments/assets/1da51446-6eba-4511-ae19-a8db5758cf9e
+
+
